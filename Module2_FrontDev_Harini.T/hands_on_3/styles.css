@@ -1,0 +1,335 @@
+/*
+   CSS RESET
+ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* 
+   BODY
+*/
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f4f6f9;
+
+    color:#333;
+
+    line-height:1.6;
+
+}
+
+/*
+   HEADER
+*/
+
+header{
+
+    background:#1f4e79;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 40px;
+
+}
+
+header h1{
+
+    font-size:30px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:25px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+nav a:hover{
+
+    color:yellow;
+
+}
+
+/*
+   HERO
+*/
+
+#hero{
+
+    background:white;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+#hero h2{
+
+    margin-bottom:15px;
+
+    color:#1f4e79;
+
+}
+
+#hero p{
+
+    font-size:18px;
+
+}
+
+/* =========================
+   SEARCH & SORT
+========================= */
+
+.controls{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.controls input{
+
+    width:300px;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+    font-size:16px;
+
+}
+
+.controls button{
+
+    padding:12px 20px;
+
+    background:#1f4e79;
+
+    color:white;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+}
+
+.controls button:hover{
+
+    background:#16395c;
+
+}
+
+/*
+   SELECTED COURSE
+*/
+
+#selected-course{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:20px auto;
+
+    background:#fff8dc;
+
+    border-left:5px solid orange;
+
+    padding:15px;
+
+    font-weight:bold;
+
+}
+
+/* =========================
+   COURSE SECTION
+========================= */
+
+#courses{
+
+    padding:40px;
+
+}
+
+#courses h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:#1f4e79;
+
+}
+
+/* =========================
+   GRID
+========================= */
+
+.course-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+/* =========================
+   COURSE CARD
+========================= */
+
+.course-card{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 8px rgba(0,0,0,0.15);
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.course-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.course-card h3{
+
+    color:#1f4e79;
+
+    margin-bottom:10px;
+
+}
+
+.course-card p{
+
+    margin-bottom:15px;
+
+}
+
+.course-card span{
+
+    color:green;
+
+    font-weight:bold;
+
+}
+
+/*
+   TOTAL CREDITS
+*/
+
+#total-credits{
+
+    text-align:center;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    margin:30px;
+
+}
+
+/*
+   FOOTER
+*/
+
+footer{
+
+    background:#1f4e79;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+
+/*
+   RESPONSIVE
+*/
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.controls{
+
+flex-direction:column;
+
+}
+
+.controls input{
+
+width:100%;
+
+}
+
+}

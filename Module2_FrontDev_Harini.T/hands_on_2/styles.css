@@ -1,0 +1,333 @@
+/*
+   CSS RESET
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*
+   BODY
+ */
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f4f6f9;
+
+    color:#333;
+
+    line-height:1.6;
+
+}
+
+/*
+   HEADER
+*/
+
+header{
+
+    background:#1f4e79;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:20px;
+
+    gap:15px;
+
+}
+
+.logo{
+
+    font-size:clamp(1.5rem,3vw,2.5rem);
+
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.nav-links a:hover{
+
+    color:yellow;
+
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+#hero{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    min-height:40vh;
+
+    padding:40px 20px;
+
+    background:white;
+
+}
+
+#hero h2{
+
+    margin-bottom:20px;
+
+}
+
+#hero p{
+
+    max-width:700px;
+
+    margin-bottom:25px;
+
+}
+
+#hero button{
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:6px;
+
+    background:#1f4e79;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+#hero button:hover{
+
+    background:#163b5c;
+
+}
+
+/* ==========================
+   STATS BAR
+========================== */
+
+.stats{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:30px;
+
+    background:#eef4fb;
+
+}
+
+.stat-item{
+
+    flex:1;
+
+    background:white;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-radius:8px;
+
+    box-shadow:0 3px 8px rgba(0,0,0,0.15);
+
+}
+
+/* ==========================
+   COURSE SECTION
+========================== */
+
+#courses{
+
+    padding:40px 20px;
+
+}
+
+#courses h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+/*
+   GRID LAYOUT
+*/
+
+.course-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.course-card{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    box-shadow:0 4px 8px rgba(0,0,0,0.15);
+
+    min-height:220px;
+
+    align-self:stretch;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+.course-card h3{
+
+    color:#1f4e79;
+
+    margin-bottom:10px;
+
+}
+
+.course-card p{
+
+    margin-bottom:20px;
+
+}
+
+.course-card span{
+
+    color:green;
+
+    font-weight:bold;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    margin-top:40px;
+
+    padding:20px;
+
+    text-align:center;
+
+    background:#1f4e79;
+
+    color:white;
+
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (min-width:768px){
+
+header{
+
+flex-direction:row;
+
+justify-content:space-between;
+
+padding:20px 40px;
+
+}
+
+.nav-links{
+
+flex-direction:row;
+
+gap:25px;
+
+}
+
+.stats{
+
+flex-direction:row;
+
+justify-content:space-between;
+
+}
+
+.course-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ==========================
+   DESKTOP
+========================== */
+
+@media (min-width:1024px){
+
+#hero{
+
+padding:80px;
+
+}
+
+.course-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}

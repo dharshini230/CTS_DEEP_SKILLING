@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>Student Portal</h1>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Courses</a></li>
+
+                <li><a href="#">Profile</a></li>
+
+                <li><a href="#">Grades</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <section id="hero">
+
+        <h2>JavaScript Student Portal</h2>
+
+        <p>
+            Browse courses, search, sort and view course details dynamically.
+        </p>
+
+    </section>
+
+    <!-- Search and Sort -->
+
+    <section class="controls">
+
+        <input
+            type="text"
+            id="search-courses"
+            placeholder="Search courses...">
+
+        <button id="sort-btn">
+            Sort by Credits
+        </button>
+
+    </section>
+
+    <!-- Selected Course -->
+
+    <div id="selected-course">
+
+        Click a course card to view details.
+
+    </div>
+
+    <!-- Course Section -->
+
+    <section id="courses">
+
+        <h2>Available Courses</h2>
+
+        <div class="course-grid">
+
+            <!-- Cards generated using JavaScript -->
+
+        </div>
+
+    </section>
+
+    <!-- Total Credits -->
+
+    <p id="total-credits">
+
+        Total Credits : 0
+
+    </p>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Student Portal | Digital Nurture 5.0
+
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
