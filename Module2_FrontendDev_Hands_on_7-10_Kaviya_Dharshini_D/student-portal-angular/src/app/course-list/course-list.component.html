@@ -1,0 +1,30 @@
+<h2>Course List</h2>
+
+<input
+type="text"
+placeholder="Search"
+[(ngModel)]="searchTerm">
+
+<br><br>
+
+<div *ngIf="loading">
+    <h3>Loading...</h3>
+</div>
+
+<div *ngIf="!loading">
+
+    <app-course-card
+
+    *ngFor="let course of filteredCourses"
+
+    [name]="course.name"
+
+    [code]="course.code"
+
+    [credits]="course.credits"
+
+    [grade]="course.grade">
+
+    </app-course-card>
+
+</div>
